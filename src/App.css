@@ -1,38 +1,101 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans';
+}
+
+.App-container{
+  width: 400px;
+  margin: 100px auto;
+  border: 2px solid rgb(94, 93, 93);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.task-wraper{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container{
+  padding: 5px 0;
+  margin-bottom: 10px;
+  text-align: center
+}
+
+.header-container h1{
+  padding-bottom: 5px;
+  border-bottom:2px solid rgb(94, 93, 93);
+}
+
+.tasks-container{
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-task-wraper{
+  padding: 5px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add-task-wraper input{
+  padding: 4px 10px;
+  font-size: 15px;
+  border: 2px solid rgb(94, 93, 93);
+  border-radius: 5px;
+  font-weight: 600;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.add-task-wraper button, .task-wraper button{
+  padding: 4px 15px 4px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px solid rgb(9, 33, 9);
+  border-radius: 5px;
+  color: rgb(9, 33, 9);
+  font-weight: 600;
+  
+}
+
+.add-task-wraper button:hover{
+  color: whitesmoke;
+  background-color: rgb(9, 33, 9);
+}
+
+.task-container{
+  width: 100%;
+  margin: 10px auto;
+}
+
+.task-wraper{
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px 15px;
+  border: 2px solid rgb(94, 93, 93);
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: aliceblue;
+}
+
+.task-wraper button{
+  color: darkred;
+  border: 2px solid darkred;
+}
+.task-wraper button:hover{
+  background-color: red;
+  border: 2px solid red;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo{
+  margin-right: 8px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tasks-container h3{
+  padding-top: 10px;
+  margin: 20px 0 5px 0 ;
 }
+
+
